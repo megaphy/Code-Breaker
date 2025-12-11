@@ -1,0 +1,80 @@
+﻿<!-- ID: 001471684-4 | Name: Anna Asenova | Course: Introduction to Programming | Module Code: COMP1950 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Breaker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== WHOLE THING/MAIN PARENT ===== -->
+
+  <div class="outer-frame">
+
+      <!-- ===== NAME SCREEN ===== -->
+
+      <div id="nameScreen">
+        <h1>Code Breaker</h1>
+        <p>Please enter your name for the score table:</p>
+        <input id="playerNameInput" type="text">
+        <br>
+        <button id="startBtn">Start Game</button>
+        <div id="nameMessage" class="message"></div>
+      </div>
+
+      <!-- ===== GAME SCREEN ===== -->
+
+      <div id="gameScreen">
+        <h1>Code Breaker</h1>
+        <p class="game-instructions">Guess the 4-digit code (0-9). <strong>Black peg</strong> = correct digit in correct position. <strong>White peg</strong> = correct digit but wrong position.</p>
+         
+        <!-- NUMBER HISTORY -->
+
+        <div class="board">
+          <div id="history"></div>
+
+          <!-- NUMBER GUESS INPUT -->
+
+          <div class="number-guess">
+          <input type="text" class="digit-input" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+          <input type="text" class="digit-input" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+          <input type="text" class="digit-input" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+          <input type="text" class="digit-input" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+          </div>
+
+          <!-- BUTTONS -->
+
+          <button id="checkBtn" class="btn">Check Guess</button>
+          <button id="resetBtn" class="btn">Reset</button>
+          <button id="saveBtn" class="btn">Save Game</button>
+        </div>
+
+        <!-- MESSAGES -->
+
+        <div id="message" class="message"></div>
+
+        <!-- SCORE TABLE -->
+
+        <div id="scoreTable" class="score-table">
+          <h2><u>Score Table</u></h1>
+          <button id="clearScoreBtn" class="btn">Clear Scoreboard</button>
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="scoreBody"></tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+
+  <script src="logic.js"></script>
+</body>
+</html>
+

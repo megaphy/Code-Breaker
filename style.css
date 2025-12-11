@@ -1,0 +1,190 @@
+/* ID: 001471684-4 | Name: Anna Asenova | Course: Introduction to Programming | Module Code: COMP1950 */
+
+/* --- WHOLE THING --- */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.outer-frame {
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 40px 60px;
+  background: #e4e3e3;  
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.game-instructions {
+  font-size: 12px;
+  margin: 0 auto 15px;
+  max-width: 350px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* --- NAME SCREEN --- */
+
+#playerNameInput {
+  padding: 4px;
+  font-size: 14px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+#startBtn {
+  margin-top: 20px;
+  padding: 4px 20px;
+  border: 1px solid #000;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* --- GAME BOARD --- */
+
+#gameScreen {
+  display: none;
+}
+
+.board {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #b1b1b1;
+  width: 260px;
+  margin: 0 auto;
+}
+
+/* --- HISTORY DIGITS --- */
+
+.history-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.history-digits {
+  display: flex;
+  gap: 4px;
+}
+
+.history-box {
+  width: 38px;
+  height: 20px;
+  background: #d2d2d2;
+  border: 1px solid #b1b1b1;
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* --- PEGS --- */
+
+.pegs {
+  display: flex;
+  gap: 4px;
+}
+
+.peg {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.peg.black {
+  background: #000000;
+}
+
+.peg.white {
+  background: #ffffff;
+}
+
+.peg.none {
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+/* --- NUMBER PROMPTS --- */
+
+.number-guess {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 30px 0;
+}
+
+.digit-input {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+/* --- BUTTONS --- */
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 4px 0;
+  padding: 4px;
+  border: 1px solid #000;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background: #cccccc;
+  cursor: default;
+}
+
+/* --- MESSAGES --- */
+
+.message {
+  margin-top: 10px;
+  min-height: 20px;
+  font-size: 14px;
+  color: red;     
+}
+
+/* --- SCORE BOARD --- */
+
+.score-table {
+  margin-top: 5px;
+}
+
+.score-table h2 {
+  margin-bottom: 6px;
+}
+
+.score-table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+  background:#ffffff;
+}
+
+.score-table th,
+.score-table td {
+  border: 1px solid #333;
+  padding: 4px;
+}
+
+#clearScoreBtn {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
