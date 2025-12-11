@@ -1,6 +1,7 @@
 # Code Breaker Game
 Code Breaker is a 4-digit Mastermind-style puzzle. You have up to 10 attempts to guess a secret code composed of digits 0–9.
 
+[PLAY HERE](https://megaphy.github.io/Code-Breaker/CodeBreaker.html)
 
 ![Alt text](image-2.png)
 
